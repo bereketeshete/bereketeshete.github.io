@@ -1,1 +1,0 @@
-# CIRL memphis web repository
