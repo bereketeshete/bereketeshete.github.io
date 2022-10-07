@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>CIRL Memphis</title>
+</head>
+
+
+<!------------------------- Navigation Bar Style ---------------------->
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: grey;
+  color: white;
+
+.titleBlk {
+  border: 5px outset red;
+  background-color: lightblue;    
+  text-align: center;
+}
+
+</style>
+
+<!------------------------- Title Block Style --------------------->
+
+<style>
+
+.titleBlk {
+  background-image: url("https://sim.hms.harvard.edu/wp-content/uploads/2014/11/prophase.jpg");
+  text-align: center;
+}
+
+</style>
+
+<!------------------------- Title Block --------------------------->
+
+<div class="titleBlk">
+	<br>
+	<h2><p style="color:white;"> Advanced Research in High-Resolution Light Microscopy Imaging <p></h2>
+	<h4><p style="color:white;">University of Memphis</p></h4><br>
+        
+</div>
+
+
+<!------------------------- Navigation Bar ------------------------->
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="Resources.html">Resources</a>
+  <a href="Online_Tools.html">Online Tools</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!------------------------------ Body ----------------------------->
+
+<body style="background-color:whitesmoke;">
+
+
+<h2 style="text-align:center;">2D DL-SIM Super-Resolution </h2>
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+  <center>
+  Upload TIFF image to be reconstructed: <br><br>
+  <input type="file" name="fileToUpload" id="fileToUpload"> <br><br>
+  <input type="submit" value="Run" name="submit"></center>
+</form>
+
+
+<!------------------------------ End ----------------------------->
+<br><br><br><br><br><br>
+<p style="text-align:center;"> © 2022</p>
+</body>
+</html>
