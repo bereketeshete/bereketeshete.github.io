@@ -22,9 +22,9 @@ body {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 14px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 .topnav a:hover {
@@ -95,9 +95,41 @@ img {
 
 <style>
 
+
 .titleBlk {
-  background-image: url("https://sim.hms.harvard.edu/wp-content/uploads/2014/11/prophase.jpg");
+  background-image: url("images/title_3.png");
   text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.highlight {
+  display: inline;
+  padding: .25em 0;
+  background: #FFC107;
+  color: #ffffff;
+  box-shadow: .5em 0 0 #FFC107, -.5em 0 0 #FFC107;
+}
+
+div.a {
+  text-align: right;
+  font-size: 12px;
 }
 
 </style>
@@ -105,9 +137,11 @@ img {
 <!------------------------- Title Block ------------------------->
 
 <div class="titleBlk">
-	<br>
+  <div class="a">
+  <p p style="color:white;" style="font-family:'Courier New'" style="font-size:3px"> FOR STUDENTS  |  Login    &nbsp; </p>
+  </div>
 	<h2><p style="color:white;"> Deep-learning assisted Super-Resolution Microscopy <p></h2>
-	<h4><p style="color:white;">University of Memphis</p></h4><br>
+	<h4><p style="color:white;">Computational Imaging Research Labratory <br><br> University of Memphis</p></h4><br>
         
 </div>
 
@@ -131,16 +165,7 @@ img {
 <body style="background-color:whitesmoke;">
 
 
-<ul>
-  <li><a href="#home">Home</a></li> <br>
-  <li><a href="Super-Resolution.html">Super-Resolution</a></li> <br>
-</ul>
 
-
-<h2 style="text-align:center;">3D SIM Super-Resolution U-Net </h2>
-<center><img src="3d_network.png" alt="Flowers in Chania" width="460" height="345" class ="center"></center>
-
-<p style="text-align:center;">(C) 2022</p>
 
 
 
@@ -152,14 +177,6 @@ img {
   rel="stylesheet"
   href="https://unpkg.com/img-comparison-slider@7/dist/styles.css"
 />
-
-<div class="center">
-<img-comparison-slider>
-  <img slot="first" src="wf.png"  width="100%"  />
-  <figcaption>Before</figcaption>
-  <img slot="second" src="gt.png" width="100%"  />
-</img-comparison-slider>
-</div>
 
 
 <center> Axial Super-Resolution </center> <br>
@@ -177,6 +194,8 @@ img {
 </img-comparison-slider>
 
 <br><br><br><br>
+
+<p style="text-align:center;"> © 2022</p>
 
 </center>
 
